@@ -28,6 +28,10 @@
     &__left{
         width: 33.333333%;
         display: table-cell;
+
+        @include respond(phone){
+            display: none;
+        }
     }
 
     &__right{
@@ -40,7 +44,13 @@
     &__img{
         display: block;
         width: 100%;
+
+        @include respond(tab-port){
+            height: 25rem;
+        }
     }
+
+
 
     &__text{
         font-size: 1.4rem;
@@ -80,5 +90,11 @@
         &:hover{
             color: $color-primary;
         }
+    }
+}
+
+.heading-secondary{
+    @include respond(phone){
+       margin-left: 6.5rem;
     }
 }

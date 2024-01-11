@@ -29,6 +29,14 @@
         width: 33.333333%;
         display: table-cell;
 
+        // @include respond(tab-land){
+        //     background-size: cover;
+        // }
+
+        @include respond(tab-port){
+            width: 50%;
+        }
+
         @include respond(phone){
             display: none;
         }
@@ -39,6 +47,10 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-port){
+            max-width: 50%;
+        }
     }
 
     &__img{
@@ -47,6 +59,13 @@
 
         @include respond(tab-port){
             height: 25rem;
+            width: 100%;
+        }
+
+        @include respond(tab-land){
+            height: 100%;
+            width: 100%;
+            background-size: cover;
         }
     }
 

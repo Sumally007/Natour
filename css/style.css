@@ -720,6 +720,11 @@ body {
   width: 33.333333%;
   display: table-cell;
 }
+@media (max-width: 56.25em) {
+  .popup__left {
+    width: 50%;
+  }
+}
 @media (max-width: 37.5em) {
   .popup__left {
     display: none;
@@ -731,6 +736,11 @@ body {
   vertical-align: middle;
   padding: 3rem 5rem;
 }
+@media (max-width: 56.25em) {
+  .popup__right {
+    max-width: 50%;
+  }
+}
 .popup__img {
   display: block;
   width: 100%;
@@ -738,6 +748,14 @@ body {
 @media (max-width: 56.25em) {
   .popup__img {
     height: 25rem;
+    width: 100%;
+  }
+}
+@media (max-width: 75em) {
+  .popup__img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
   }
 }
 .popup__text {
